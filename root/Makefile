@@ -1,5 +1,5 @@
 bootstrapper := paket.bootstrapper.exe
-bootstrapperpath := c:/Programs/Git/Paket/.paket/
+bootstrapperpath := c:/WS/Personal_Git/Paket/.paket/
 
 all: clean test
 
@@ -12,7 +12,7 @@ install: updatepaket
 	.paket/paket.exe install
 
 build:
-	c:/Tools/Enterprise/MSBuild/15.0/Bin/MSBuild.exe -nologo -v:q -property:GenerateFullPaths=true
+	C:\Program Files \(x86\)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\MSBuild.exe -nologo -v:q -property:GenerateFullPaths=true
 
 #flags for good development experience with stack trace line number and filenames
 test: build
